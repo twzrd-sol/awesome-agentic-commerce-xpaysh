@@ -25,7 +25,7 @@ Maintained by [xpay✦](https://www.xpay.sh). PRs welcome.
 | **ACP** — Agentic Commerce Protocol | [agentic-commerce-protocol/agentic-commerce-protocol](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) | OpenAI · Stripe · Meta (TSC) | Cart, checkout, delegated payment, discounts, fulfillment |
 | **UCP** — Universal Commerce Protocol | [Universal-Commerce-Protocol/ucp](https://github.com/Universal-Commerce-Protocol/ucp) | Tech Council + Governance Council (vendor-neutral) | Cart, checkout, order, catalog, refunds, disputes — RFC 9421 signed requests, MCP/A2A bindings |
 | **AP2** — Agent Payments Protocol | [google-agentic-commerce/AP2](https://github.com/google-agentic-commerce/AP2) | Google | Signed mandates, A2A transport |
-| Forter's TACP — Trusted Agentic Commerce | [forter/trusted-agentic-commerce-protocol](https://github.com/forter/trusted-agentic-commerce-protocol) | Forter | Fork of ACP with trust extensions |
+| Forter's TACP — Trusted Agentic Commerce | [forter/trusted-agentic-commerce-protocol](https://github.com/forter/trusted-agentic-commerce-protocol) | Forter | Parallel agent-authentication / trust-signal overlay (JWS+JWE, JWKS, fraud-signal envelopes). Not a fork of ACP; orthogonal to the cart/checkout surface. |
 
 Side-by-side technical comparison: **[ACP vs UCP vs AP2](https://docs.xpay.sh/agentic-commerce-protocols/comparison)**.
 

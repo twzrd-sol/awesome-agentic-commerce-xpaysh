@@ -27,7 +27,7 @@ Maintained by [xpay✦](https://www.xpay.sh). PRs welcome.
 | **AP2** — Agent Payments Protocol | [google-agentic-commerce/AP2](https://github.com/google-agentic-commerce/AP2) | Google | Signed mandates, A2A transport |
 | Forter's TACP — Trusted Agentic Commerce | [forter/trusted-agentic-commerce-protocol](https://github.com/forter/trusted-agentic-commerce-protocol) | Forter | Fork of ACP with trust extensions |
 
-Side-by-side technical comparison: **[docs.xpay.sh — ACP vs UCP vs AP2](https://docs.xpay.sh/agentic-commerce-protocols/comparison)**.
+Side-by-side technical comparison: **[ACP vs UCP vs AP2](https://docs.xpay.sh/agentic-commerce-protocols/comparison)**.
 
 ---
 
@@ -41,33 +41,33 @@ Each row: which protocols it speaks, license, and link.
 
 ### commercetools
 
-- **[xpaysh/agentic-commerce-for-commercetools](https://github.com/xpaysh/agentic-commerce-for-commercetools)** — Phase B-1, scaffold in progress.
+- **[xpaysh/agentic-commerce-for-commercetools](https://github.com/xpaysh/agentic-commerce-for-commercetools)** — scaffolded; in active development.
 
 ### BigCommerce
 
-- *No dedicated repo yet. Planned: [xpaysh/agentic-commerce-for-bigcommerce](https://github.com/xpaysh/agentic-commerce-for-bigcommerce) (Phase B-2).*
+- *No dedicated repo yet. Planned: `xpaysh/agentic-commerce-for-bigcommerce`.*
 
 ### Magento / Adobe Commerce
 
-- *No dedicated unified repo. Two small ACP modules exist on GitHub (28★, 13★, both unmaintained). Planned consolidation: [xpaysh/agentic-commerce-for-magento](https://github.com/xpaysh/agentic-commerce-for-magento) (Phase B-3).*
+- *No dedicated unified repo. Two small ACP modules exist on GitHub (28★, 13★, both unmaintained). Planned consolidation: `xpaysh/agentic-commerce-for-magento`.*
 
 ### Shopify
 
 - **[Shopify/Shopify-AI-Toolkit](https://github.com/Shopify)** *(name approximate)* — official Shopify AI/UCP path. Vendor-maintained.
-- *Planned (differentiated, App-Store distribution): [xpaysh/agentic-commerce-for-shopify-app](https://github.com/xpaysh/agentic-commerce-for-shopify-app) (Phase B-4).*
+- *Planned (differentiated, App-Store distribution): `xpaysh/agentic-commerce-for-shopify-app`.*
 
 ### Salesforce Commerce Cloud / Demandware
 
-- *No dedicated repo yet. Planned: [xpaysh/agentic-commerce-for-salesforce-commerce](https://github.com/xpaysh/agentic-commerce-for-salesforce-commerce) (Phase B-5).*
+- *No dedicated repo yet. Planned: `xpaysh/agentic-commerce-for-salesforce-commerce`.*
 
 ### Saleor
 
 - **[saleor/saleor-mcp](https://github.com/saleor)** — official Saleor MCP server.
-- *Planned multi-protocol port: [xpaysh/agentic-commerce-for-saleor](https://github.com/xpaysh/agentic-commerce-for-saleor) (Phase C).*
+- *Planned multi-protocol port: `xpaysh/agentic-commerce-for-saleor`.*
 
 ### PrestaShop, OpenCart, Shopware, Spree, Sylius, nopCommerce, Drupal Commerce, Ecwid
 
-*Phase C — template + community PR. See the [contributor guide](https://docs.xpay.sh/merchants/agentic-commerce/contribute) (TBD) and the [plugin template](https://github.com/xpaysh/agentic-commerce-plugin-template).*
+*Template-based, community-contributed. See the [contributor guide](https://docs.xpay.sh/merchants/agentic-commerce/contribute) (TBD) and the [plugin template](https://github.com/xpaysh/agentic-commerce-plugin-template).*
 
 ---
 
@@ -120,7 +120,7 @@ Real, externally-verifiable standards (no invented well-known URIs):
 
 - **[Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)** — sister ecosystem; many entries are MCP servers exposed by commerce platforms.
 - **[xpaysh/awesome-agentic-economy](https://github.com/xpaysh/awesome-agentic-economy)** — broader: agentic-economy resources (monetization, identity, payment).
-- **[Awesome x402](https://github.com/xpaysh-awesome-fork)** — x402-specific resources.
+- **[Awesome x402](https://github.com/xpaysh/awesome-x402)** — x402-specific resources.
 
 ---
 

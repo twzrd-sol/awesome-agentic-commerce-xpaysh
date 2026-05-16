@@ -49,23 +49,27 @@ Each row: which protocols it speaks, license, and link.
 
 ### Magento / Adobe Commerce
 
-- *No dedicated unified repo. Two small ACP modules exist on GitHub (28★, 13★, both unmaintained). Planned consolidation: `xpaysh/agentic-commerce-for-magento`.*
+- **[xpaysh/agentic-commerce-for-magento](https://github.com/xpaysh/agentic-commerce-for-magento)** — scaffolded; in active development. Consolidates two unmaintained upstream ACP modules (28★, 13★) onto multi-protocol coverage.
 
 ### Shopify
 
 - **[Shopify/Shopify-AI-Toolkit](https://github.com/Shopify)** *(name approximate)* — official Shopify AI/UCP path. Vendor-maintained.
-- *Planned (differentiated, App-Store distribution): `xpaysh/agentic-commerce-for-shopify-app`.*
+- **[xpaysh/agentic-commerce-for-shopify-app](https://github.com/xpaysh/agentic-commerce-for-shopify-app)** — scaffolded; in active development. Shopify App that adds ACP and AP2 alongside Shopify's UCP-native flow (composes, doesn't compete).
 
 ### Salesforce Commerce Cloud / Demandware
 
-- *No dedicated repo yet. Planned: `xpaysh/agentic-commerce-for-salesforce-commerce`.*
+- **[xpaysh/agentic-commerce-for-salesforce-commerce](https://github.com/xpaysh/agentic-commerce-for-salesforce-commerce)** — scaffolded; in active development. B2C Commerce cartridge + PWA Kit extension.
 
 ### Saleor
 
-- **[saleor/saleor-mcp](https://github.com/saleor)** — official Saleor MCP server.
-- *Planned multi-protocol port: `xpaysh/agentic-commerce-for-saleor`.*
+- **[saleor/saleor-mcp](https://github.com/saleor)** — official Saleor MCP server (the MCP transport binding).
+- **[xpaysh/agentic-commerce-for-saleor](https://github.com/xpaysh/agentic-commerce-for-saleor)** — scaffolded; in active development. The ACP/UCP/AP2 protocol layer; composes with saleor-mcp, doesn't replace it.
 
-### PrestaShop, OpenCart, Shopware, Spree, Sylius, nopCommerce, Drupal Commerce, Ecwid
+### PrestaShop
+
+- **[xpaysh/agentic-commerce-for-prestashop](https://github.com/xpaysh/agentic-commerce-for-prestashop)** — scaffolded; in active development. PrestaShop module; strongest EU-regional presence in the family.
+
+### OpenCart, Shopware, Spree, Sylius, nopCommerce, Drupal Commerce, Ecwid
 
 *Template-based, community-contributed. See the [contributor guide](https://docs.xpay.sh/merchants/agentic-commerce/contribute) (TBD) and the [plugin template](https://github.com/xpaysh/agentic-commerce-plugin-template).*
 

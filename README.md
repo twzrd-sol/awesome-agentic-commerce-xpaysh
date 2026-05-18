@@ -37,41 +37,41 @@ Each row: which protocols it speaks, license, and link.
 
 ### WooCommerce
 
-- **[xpaysh/agentic-commerce-for-woocommerce](https://github.com/xpaysh/agentic-commerce-for-woocommerce)** — ACP + UCP + AP2 (planned). WordPress plugin. GPLv2.
+- **[xpaysh/agentic-commerce-for-woocommerce](https://github.com/xpaysh/agentic-commerce-for-woocommerce)** — v0.2.x (PHP reference). ACP + UCP + AP2. WordPress plugin. GPLv2.
 
 ### commercetools
 
-- **[xpaysh/agentic-commerce-for-commercetools](https://github.com/xpaysh/agentic-commerce-for-commercetools)** — scaffolded; in active development.
+- **[xpaysh/agentic-commerce-for-commercetools](https://github.com/xpaysh/agentic-commerce-for-commercetools)** — v0.2.1. TS reference. ACP + UCP + AP2. RFC 9421 signature verification middleware on `/ucp/*` + `/acp/*` (env-gated).
 
 ### BigCommerce
 
-- **[xpaysh/agentic-commerce-for-bigcommerce](https://github.com/xpaysh/agentic-commerce-for-bigcommerce)** — scaffolded; in active development.
+- **[xpaysh/agentic-commerce-for-bigcommerce](https://github.com/xpaysh/agentic-commerce-for-bigcommerce)** — v0.2.1. ACP + UCP + AP2. BigCommerce App via App Marketplace.
 
 ### Magento / Adobe Commerce
 
-- **[xpaysh/agentic-commerce-for-magento](https://github.com/xpaysh/agentic-commerce-for-magento)** — scaffolded; in active development. Consolidates two unmaintained upstream ACP modules (28★, 13★) onto multi-protocol coverage.
+- **[xpaysh/agentic-commerce-for-magento](https://github.com/xpaysh/agentic-commerce-for-magento)** — v0.2.1. ACP + UCP + AP2. Consolidates two unmaintained upstream ACP modules (28★, 13★) onto multi-protocol coverage.
 
 ### Shopify
 
 - **[Shopify/Shopify-AI-Toolkit](https://github.com/Shopify)** *(name approximate)* — official Shopify AI/UCP path. Vendor-maintained.
-- **[xpaysh/agentic-commerce-for-shopify-app](https://github.com/xpaysh/agentic-commerce-for-shopify-app)** — scaffolded; in active development. Shopify App that adds ACP and AP2 alongside Shopify's UCP-native flow (composes, doesn't compete).
+- **[xpaysh/agentic-commerce-for-shopify](https://github.com/xpaysh/agentic-commerce-for-shopify)** — v0.2.1. ACP + UCP + AP2. Shopify App composing with Shopify's UCP-native flow (composes, doesn't compete). App Store packaging in a follow-on private repo.
 
 ### Salesforce Commerce Cloud / Demandware
 
-- **[xpaysh/agentic-commerce-for-salesforce-commerce](https://github.com/xpaysh/agentic-commerce-for-salesforce-commerce)** — scaffolded; in active development. B2C Commerce cartridge + PWA Kit extension.
+- **[xpaysh/agentic-commerce-for-salesforce-commerce](https://github.com/xpaysh/agentic-commerce-for-salesforce-commerce)** — v0.2.1. ACP + UCP + AP2. B2C Commerce cartridge + PWA Kit extension.
 
 ### Saleor
 
 - **[saleor/saleor-mcp](https://github.com/saleor)** — official Saleor MCP server (the MCP transport binding).
-- **[xpaysh/agentic-commerce-for-saleor](https://github.com/xpaysh/agentic-commerce-for-saleor)** — scaffolded; in active development. The ACP/UCP/AP2 protocol layer; composes with saleor-mcp, doesn't replace it.
+- **[xpaysh/agentic-commerce-for-saleor](https://github.com/xpaysh/agentic-commerce-for-saleor)** — v0.2.1. ACP + UCP + AP2 protocol layer; composes with saleor-mcp, doesn't replace it.
 
 ### PrestaShop
 
-- **[xpaysh/agentic-commerce-for-prestashop](https://github.com/xpaysh/agentic-commerce-for-prestashop)** — scaffolded; in active development. PrestaShop module; strongest EU-regional presence in the family.
+- **[xpaysh/agentic-commerce-for-prestashop](https://github.com/xpaysh/agentic-commerce-for-prestashop)** — v0.2.1. ACP + UCP + AP2. PrestaShop module; strongest EU-regional presence in the family.
 
 ### OpenCart, Shopware, Spree, Sylius, nopCommerce, Drupal Commerce, Ecwid
 
-*Template-based, community-contributed. See the [contributor guide](https://docs.xpay.sh/merchants/agentic-commerce/contribute) (TBD) and the [plugin template](https://github.com/xpaysh/agentic-commerce-plugin-template).*
+*Template-based, community-contributed.* See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the walkthrough, [`BOUNTIES.md`](./BOUNTIES.md) for reward amounts on accepted plugins, and [`xpaysh/agentic-commerce-plugin-template`](https://github.com/xpaysh/agentic-commerce-plugin-template) for the starter kit.
 
 ---
 
@@ -82,7 +82,24 @@ Each row: which protocols it speaks, license, and link.
 - **[Universal-Commerce-Protocol/js-sdk](https://github.com/Universal-Commerce-Protocol/js-sdk)** — official UCP TypeScript SDK with RFC 9421 verifier.
 - **[Universal-Commerce-Protocol/python-sdk](https://github.com/Universal-Commerce-Protocol/python-sdk)** — official UCP Python SDK.
 - **[Universal-Commerce-Protocol/ucp-schema](https://github.com/Universal-Commerce-Protocol/ucp-schema)** — Rust validator.
-- **[xpaysh/agentic-commerce-plugin-template](https://github.com/xpaysh/agentic-commerce-plugin-template)** — TypeScript template for new per-platform plugins.
+- **[xpaysh/agentic-commerce-plugin-template](https://github.com/xpaysh/agentic-commerce-plugin-template)** — TypeScript monorepo template for new per-platform plugins. Publishes the `@xpaysh/*` package family below.
+
+### `@xpaysh/*` packages (npm)
+
+| Package | What it ships |
+|---|---|
+| [`@xpaysh/acp-schemas`](https://www.npmjs.com/package/@xpaysh/acp-schemas) | Real ACP JSON Schemas vendored from upstream `spec/2026-04-17`. 7 bundles, 140 type defs. |
+| [`@xpaysh/ucp-schemas`](https://www.npmjs.com/package/@xpaysh/ucp-schemas) | 83 UCP schemas vendored from `Universal-Commerce-Protocol/ucp` source. `generateUcpProfile()` + `registerForValidation(ajv)`. |
+| [`@xpaysh/ap2-schemas`](https://www.npmjs.com/package/@xpaysh/ap2-schemas) | AP2 namespace (`SPEC_VERSION='draft'` while upstream is pre-stable). |
+| [`@xpaysh/adapter-contract`](https://www.npmjs.com/package/@xpaysh/adapter-contract) | The `PlatformAdapter` TS interface every per-platform plugin implements. |
+| [`@xpaysh/template-adapter`](https://www.npmjs.com/package/@xpaysh/template-adapter) | Working reference `PlatformAdapter` backed by a deterministic in-memory catalog — copy as the starting point for a new plugin. |
+| [`@xpaysh/discovery`](https://www.npmjs.com/package/@xpaysh/discovery) | Pure-function generators for `/llms.txt`, schema.org JSON-LD, `robots.txt`, A2A `agent-card.json`, RFC 9728. Zero deps. |
+| [`@xpaysh/cart-deeplinks`](https://www.npmjs.com/package/@xpaysh/cart-deeplinks) | HS256-signed JWT cart-handoff URLs. |
+| [`@xpaysh/storefront-audit`](https://www.npmjs.com/package/@xpaysh/storefront-audit) | Discovery-layer auditor + `ac-doctor` CLI; rejects fictitious well-known URIs. |
+| [`@xpaysh/http-message-signatures`](https://www.npmjs.com/package/@xpaysh/http-message-signatures) | RFC 9421 sign/verify; ed25519 + hmac-sha256; targets the component set UCP REST uses. |
+| [`@xpaysh/conformance-fixtures`](https://www.npmjs.com/package/@xpaysh/conformance-fixtures) | Golden ACP + UCP request/response payloads; every fixture cross-validates against the canonical schemas via Ajv. |
+| [`@xpaysh/acp-session-store`](https://www.npmjs.com/package/@xpaysh/acp-session-store) | ACP checkout-session storage: InMemorySessionStore + DynamoDBSessionStore behind a single interface. |
+| [`@xpaysh/lint-wellknowns`](https://www.npmjs.com/package/@xpaysh/lint-wellknowns) | CI linter + GitHub Action that fails builds emitting fictitious well-known URIs. |
 
 ---
 
@@ -106,7 +123,7 @@ Real, externally-verifiable standards (no invented well-known URIs):
 - **[schema.org](https://schema.org)** — JSON-LD `Product`, `Offer`, `AggregateOffer`, `BreadcrumbList`.
 - **[RFC 9309](https://datatracker.ietf.org/doc/rfc9309/)** — `robots.txt`. Real AI user-agents to allowlist or block: `GPTBot`, `ClaudeBot`, `Google-Extended`, `PerplexityBot`, `CCBot`, `Amazonbot`.
 - **[RFC 9728](https://datatracker.ietf.org/doc/rfc9728/)** — `/.well-known/oauth-protected-resource` for agent OAuth.
-- **[UCP business profile](https://ucp.dev/latest/specification/overview/) / [Google's UCP guide](https://developers.google.com/merchant/ucp/guides/ucp-profile)** — `/.well-known/ucp` (no extension), spec rev `2026-04-08`. The capability-negotiation entry point that Google + Shopify + Etsy + Wayfair + Target + Walmart fetch.
+- **[UCP business profile](https://ucp.dev/latest/specification/overview/) / [Google's UCP guide](https://developers.google.com/merchant/ucp/guides/ucp-profile)** — `/.well-known/ucp` (no extension). Spec status: `draft` upstream; the on-the-wire `version` field is a YYYY-MM-DD date (e.g. `2026-05-18`). The capability-negotiation entry point that Google + Shopify + Etsy + Wayfair + Target + Walmart fetch.
 
 ### Files to **not** emit
 
@@ -131,13 +148,10 @@ Real, externally-verifiable standards (no invented well-known URIs):
 
 ## Contributing
 
-This list aims for **signal over volume**. Submit a plugin if it:
+This list aims for **signal over volume**. Two ways in:
 
-1. Implements at least one of ACP / UCP / AP2 against a real eCommerce platform.
-2. Emits real-standard discovery files (`llms.txt`, schema.org JSON-LD) and does **not** emit fictitious well-known URIs.
-3. Is actively maintained (commit within the last 90 days) OR is the only known plugin for that platform.
-
-Open a PR adding your repo to the relevant section. We sort by last-commit-date within each platform.
+- **Add an existing plugin or library** — open a PR adding your repo to the relevant section. Acceptance criteria + sort rules in [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+- **Build a new per-platform plugin** — bounties pay $100–500 per accepted plugin. Tiers, eligibility, and process in [`BOUNTIES.md`](./BOUNTIES.md). Starter kit: [`xpaysh/agentic-commerce-plugin-template`](https://github.com/xpaysh/agentic-commerce-plugin-template).
 
 ## License
 

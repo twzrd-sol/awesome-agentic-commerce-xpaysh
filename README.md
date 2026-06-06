@@ -109,6 +109,7 @@ These sit *below* the commerce protocols. Any commerce protocol can plug into an
 
 - **[Stripe MPP](https://mpp.dev)** — Machine Payments Protocol. Cards, stablecoins, fiat acceptance.
 - **[x402](https://x402.org)** — HTTP 402 payment rail. Stablecoin settlement.
+- **[TWZRD Agent Intel](https://intel.twzrd.xyz)** — Trust scoring and x402 micropayment verification for AI agents on Solana. Verify counterparty wallets before transacting; free `resolve_agent`/`score_agent`/`preflight_check` and paid `get_trust_receipt` via HTTP 402. MCP endpoint: `https://intel.twzrd.xyz/mcp`. (`pip install twzrd-agent-intel`)
 - **Cards** — Stripe, Adyen, Braintree, etc.
 - **Stablecoin direct** — Bridge, Tempo, Privy.
 
